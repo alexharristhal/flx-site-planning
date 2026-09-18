@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Project Fit · Flexnode</title>
+<meta name="description" content="Share the capacity, the place and the date. Flexnode returns a preliminary fit summary with configuration, readiness conditions, scope assumptions and a named owner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23fff'/><rect x='30' y='30' width='40' height='40' fill='%23000'/></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Flexnode home">
+      <img src="assets/logo-horizontal-black.svg" alt="Flexnode">
+    </a>
+    <nav class="nav-links" aria-label="Primary"><a href="platform.html">Platform</a><a href="configure.html">Configure</a><a href="delivery.html">Delivery</a><a href="sites.html">Sites</a><a href="community.html">Community</a><a href="company.html">Company</a><a href="insights.html">Insights</a></nav>
+    <div class="nav-right">
+      <a class="btn btn-sm" href="project-fit.html"><span>Request a Project Fit</span><span class="ar" aria-hidden="true">&#8599;</span></a>
+      <button class="nav-burger" data-burger aria-expanded="false" aria-controls="drawer">
+        <span class="burger-ico" aria-hidden="true"><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer"><a class="dl" href="platform.html"><span>Platform</span><span class="idx">01</span></a><a class="dl" href="configure.html"><span>Configure</span><span class="idx">02</span></a><a class="dl" href="delivery.html"><span>Delivery</span><span class="idx">03</span></a><a class="dl" href="sites.html"><span>Sites</span><span class="idx">04</span></a><a class="dl" href="community.html"><span>Community</span><span class="idx">05</span></a><a class="dl" href="company.html"><span>Company</span><span class="idx">06</span></a><a class="dl" href="insights.html"><span>Insights</span><span class="idx">07</span></a><a class="dl" href="team.html"><span>Leadership</span><span class="idx">08</span></a><a class="dl" href="project-fit.html"><span>Request a Project Fit</span><span class="idx">09</span></a></div>
+<main id="main">
+
+<section class="sec-tight">
+  <div class="wrap">
+    <div class="row row-64" style="align-items:end">
+      <div class="stack">
+        <p class="tag">Request a Project Fit</p>
+        <h1 class="d2" style="max-width:15ch">What do you need online, and when?</h1>
+      </div>
+      <p class="body-lg">Share the basics. You get a preliminary fit summary covering the likely configuration, the readiness conditions, the scope assumptions, and the next information we need for schedule and budget. A named person and a response date, not a form receipt.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(60px,8vw,120px)">
+  <div class="wrap">
+    <div class="row row-46" style="align-items:start">
+
+      <!-- FORM -->
+      <div>
+        <div id="carry-banner" class="rv" style="display:none;border:1px solid var(--black);padding:18px 20px;margin-bottom:28px">
+          <p class="mono dim" style="margin-bottom:8px">Carried from the configurator</p>
+          <p class="d5" id="carry-text">&middot;</p>
+          <a class="tlink tlink-dim" href="configure.html" style="margin-top:12px">Change the configuration <span class="ar" aria-hidden="true">&#8594;</span></a>
+        </div>
+
+        <form class="rv" id="fitform" novalidate>
+          <div style="display:flex;gap:0;border-top:1px solid var(--black);margin-bottom:32px">
+            <span class="fstep" data-step="1" data-on="true">01 Starting point</span>
+            <span class="fstep" data-step="2">02 Project</span>
+            <span class="fstep" data-step="3">03 Contact</span>
+          </div>
+
+          <!-- STEP 1 -->
+          <fieldset class="fpanel" data-panel="1" data-on="true" style="border:0;padding:0;margin:0">
+            <legend class="sr">Starting point</legend>
+            <p class="mono dim" style="margin-bottom:14px">Which of these is closest?</p>
+            <div class="opts" data-fgroup="start">
+              <button type="button" class="opt" data-val="capacity" aria-pressed="true"><span class="dot"></span><span><span class="ot">I need capacity</span><span class="od">A workload, a region and a date. You find the power and deliver it.</span></span></button>
+              <button type="button" class="opt" data-val="site"><span class="dot"></span><span><span class="ot">I have power or a site</span><span class="od">An energized parcel, a substation or an industrial asset to assess.</span></span></button>
+              <button type="button" class="opt" data-val="partner"><span class="dot"></span><span><span class="ot">Partnership or municipality</span><span class="od">Supply, delivery, capital, or an approval conversation.</span></span></button>
+            </div>
+            <button type="button" class="btn btn-solid fnext" data-goto="2" style="margin-top:28px"><span>Continue</span><span class="ar" aria-hidden="true">&#8594;</span></button>
+          </fieldset>
+
+          <!-- STEP 2 -->
+          <fieldset class="fpanel" data-panel="2" style="border:0;padding:0;margin:0">
+            <legend class="sr">Project</legend>
+            <div class="row row-2" style="gap:0 28px">
+              <div class="field"><label for="f-region">Region or market</label><input type="text" id="f-region" placeholder="Dallas, Chicago, Pennsylvania"></div>
+              <div class="field"><label for="f-mw">Target critical IT</label>
+                <select id="f-mw"><option>Not sure yet</option><option>4.5 MW</option><option selected>9 MW</option><option>13.5 MW</option><option>18 MW</option><option>More than 18 MW</option></select>
+              </div>
+              <div class="field"><label for="f-power">Power status</label>
+                <select id="f-power"><option>Energized</option><option selected>Contracted</option><option>Planned or in queue</option><option>Under diligence</option><option>None identified</option></select>
+              </div>
+              <div class="field"><label for="f-date">Target operational date</label><input type="text" id="f-date" placeholder="Q3 next year"></div>
+              <div class="field"><label for="f-site">Site status</label>
+                <select id="f-site"><option>Owned or controlled</option><option selected>Identified, not controlled</option><option>Searching</option><option>Portfolio of candidates</option></select>
+              </div>
+              <div class="field"><label for="f-work">Workload</label>
+                <select id="f-work"><option selected>Inference</option><option>Training</option><option>Mixed</option><option>Enterprise or sovereign</option><option>Not sure yet</option></select>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+              <button type="button" class="btn fnext" data-goto="1"><span>Back</span><span class="ar" aria-hidden="true">&#8592;</span></button>
+              <button type="button" class="btn btn-solid fnext" data-goto="3"><span>Continue</span><span class="ar" aria-hidden="true">&#8594;</span></button>
+            </div>
+          </fieldset>
+
+          <!-- STEP 3 -->
+          <fieldset class="fpanel" data-panel="3" style="border:0;padding:0;margin:0">
+            <legend class="sr">Contact</legend>
+            <div class="row row-2" style="gap:0 28px">
+              <div class="field"><label for="f-name">Name</label><input type="text" id="f-name"></div>
+              <div class="field"><label for="f-co">Company</label><input type="text" id="f-co"></div>
+            </div>
+            <div class="field"><label for="f-email">Work email</label><input type="email" id="f-email"></div>
+            <div class="field"><label for="f-note">Anything we should know</label><textarea id="f-note" placeholder="Constraints, deadlines, equipment already owned, prior proposals."></textarea></div>
+            <label style="display:flex;gap:11px;align-items:flex-start;font-size:14.5px;line-height:1.5;color:var(--ink-60);margin:4px 0 26px;cursor:pointer">
+              <input type="checkbox" id="f-nda" style="margin-top:3px">
+              <span>I need an NDA before sharing detailed project information.</span>
+            </label>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <button type="button" class="btn fnext" data-goto="2"><span>Back</span><span class="ar" aria-hidden="true">&#8592;</span></button>
+              <button type="submit" class="btn btn-solid"><span>Send</span><span class="ar" aria-hidden="true">&#8594;</span></button>
+            </div>
+            <p class="note" style="margin-top:20px">Prototype form. Nothing is transmitted.</p>
+          </fieldset>
+
+          <div class="fpanel" data-panel="done" style="border:1px solid var(--black);padding:clamp(24px,3vw,40px)">
+            <p class="tag">Received</p>
+            <h2 class="d3" style="margin-top:14px;max-width:18ch">We will come back with a fit summary.</h2>
+            <p class="body-lg" style="margin-top:16px">In a live deployment this would confirm the named owner and the response date. This is a prototype, so nothing was sent.</p>
+            <a class="btn btn-solid" href="configure.html" style="margin-top:24px"><span>Back to the configurator</span><span class="ar" aria-hidden="true">&#8594;</span></a>
+          </div>
+        </form>
+      </div>
+
+      <!-- SAMPLE RESPONSE -->
+      <div class="rv rv-d1">
+        <p class="mono" style="padding-bottom:12px;border-bottom:1px solid var(--black)">What comes back</p>
+        <div class="stack" style="padding-top:22px">
+          <div class="card">
+            <div class="card-head"><span class="mono dim">01</span><span class="d5">Indicative fit</span></div>
+            <p class="small card-body">Likely NX configuration or combination, the critical IT basis, a preliminary utility and land requirement, and the workload and cooling assumptions behind it.</p>
+          </div>
+          <div class="card">
+            <div class="card-head"><span class="mono dim">02</span><span class="d5">Delivery basis</span></div>
+            <p class="small card-body">Earliest credible schedule range, where the clock starts and stops, the critical dependencies, and which of them belong to you, to us, to the utility or to a partner.</p>
+          </div>
+          <div class="card">
+            <div class="card-head"><span class="mono dim">03</span><span class="d5">Commercial next step</span></div>
+            <p class="small card-body">The engagement model available for this project, the information needed for a budgetary estimate, the NDA or diligence path, and a named Flexnode owner with a target response date.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--rule);margin-top:26px;padding-top:20px">
+          <p class="note" style="max-width:52ch">What you will not receive is an instant engineered quote or a guaranteed date. Price depends on site, scope and responsibility boundary, and a number without a scope matrix is not comparable to anything.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="stack stack-sm">
+        <img src="assets/logo-horizontal-black.svg" alt="Flexnode" style="height:17px;width:auto">
+        <p class="body" style="max-width:34ch;margin-top:16px">Industrialized AI infrastructure. Permanent, configurable data center buildings for distributed, high-density compute.</p>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Product</span>
+        <a href="platform.html">Platform</a>
+        <a href="configure.html">Configure a deployment</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="sites.html">Sites</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Company</span>
+        <a href="company.html">Our story</a>
+        <a href="team.html">Leadership</a>
+        <a href="community.html">Community</a>
+        <a href="insights.html">Insights &amp; news</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Contact</span>
+        <a href="project-fit.html">Request a Project Fit</a>
+        <a href="mailto:info@flexnode.io">info@flexnode.io</a>
+        <a href="https://www.linkedin.com/company/flexnode" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span class="note">&copy; <span data-year>2026</span> Flexnode. Prototype for internal review.</span>
+      <span class="note">Renders illustrative. Capacity, schedule and density figures are representative and pending engineering approval.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script>
+(function(){
+  var form=document.getElementById('fitform'); if(!form) return;
+  function show(p){
+    form.querySelectorAll('.fpanel').forEach(function(x){x.setAttribute('data-on', x.getAttribute('data-panel')===p?'true':'false')});
+    form.querySelectorAll('.fstep').forEach(function(s){s.setAttribute('data-on', (p!=='done' && +s.getAttribute('data-step')<=+p)?'true':'false')});
+  }
+  show('1');
+  form.addEventListener('click',function(e){
+    var n=e.target.closest('.fnext'); if(n){ show(n.getAttribute('data-goto')); return; }
+    var o=e.target.closest('[data-fgroup] [data-val]');
+    if(o){ o.closest('[data-fgroup]').querySelectorAll('[data-val]').forEach(function(b){b.setAttribute('aria-pressed','false')}); o.setAttribute('aria-pressed','true'); }
+  });
+  form.addEventListener('submit',function(e){ e.preventDefault(); show('done'); window.scrollTo({top:form.getBoundingClientRect().top+window.scrollY-120, behavior:'smooth'}); });
+
+  // carry configuration through from the configurator
+  var q=new URLSearchParams(location.search);
+  if(q.get('code')){
+    var b=document.getElementById('carry-banner');
+    document.getElementById('carry-text').textContent =
+      (q.get('model')||'').toUpperCase().replace('NX','NX-') + ' · ' + (q.get('mw')||'?') + ' MW critical IT · ' + (q.get('power')||'?') + ' MW available · ' + q.get('code');
+    b.style.display='block';
+    var mw=document.getElementById('f-mw');
+    if(mw) Array.prototype.forEach.call(mw.options,function(op){ if(op.text===q.get('mw')+' MW') mw.value=op.value; });
+  }
+})();
+</script>
+</body>
+</html>

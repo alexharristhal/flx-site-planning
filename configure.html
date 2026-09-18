@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configure a deployment · Flexnode</title>
+<meta name="description" content="Design an NX deployment against your power, workload, layout and date. Live site plan, indicative footprint, density and schedule.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23fff'/><rect x='30' y='30' width='40' height='40' fill='%23000'/></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Flexnode home">
+      <img src="assets/logo-horizontal-black.svg" alt="Flexnode">
+    </a>
+    <nav class="nav-links" aria-label="Primary"><a href="platform.html">Platform</a><a href="configure.html" aria-current="page">Configure</a><a href="delivery.html">Delivery</a><a href="sites.html">Sites</a><a href="community.html">Community</a><a href="company.html">Company</a><a href="insights.html">Insights</a></nav>
+    <div class="nav-right">
+      <a class="btn btn-sm" href="project-fit.html"><span>Request a Project Fit</span><span class="ar" aria-hidden="true">&#8599;</span></a>
+      <button class="nav-burger" data-burger aria-expanded="false" aria-controls="drawer">
+        <span class="burger-ico" aria-hidden="true"><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer"><a class="dl" href="platform.html"><span>Platform</span><span class="idx">01</span></a><a class="dl" href="configure.html"><span>Configure</span><span class="idx">02</span></a><a class="dl" href="delivery.html"><span>Delivery</span><span class="idx">03</span></a><a class="dl" href="sites.html"><span>Sites</span><span class="idx">04</span></a><a class="dl" href="community.html"><span>Community</span><span class="idx">05</span></a><a class="dl" href="company.html"><span>Company</span><span class="idx">06</span></a><a class="dl" href="insights.html"><span>Insights</span><span class="idx">07</span></a><a class="dl" href="team.html"><span>Leadership</span><span class="idx">08</span></a><a class="dl" href="project-fit.html"><span>Request a Project Fit</span><span class="idx">09</span></a></div>
+<main id="main">
+
+<section class="sec-tight">
+  <div class="wrap">
+    <div class="row row-64" style="align-items:end">
+      <div class="stack">
+        <p class="tag">Deployment configurator</p>
+        <h1 class="d2" style="max-width:15ch">Design your deployment.</h1>
+      </div>
+      <p class="body-lg">Six decisions. The site plan, footprint, density and schedule redraw as you go. You leave with a configuration code you can hand to us, or to your own engineer.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(60px,8vw,120px)">
+  <div class="wrap">
+    <div class="cfg">
+
+      <!-- ============ PANEL ============ -->
+      <div class="cfg-panel">
+        <div class="cfg-prog">
+          <span class="prog-lbl" id="prog-lbl">0 / 6 set</span>
+          <span class="prog-track"><span class="prog-fill" id="prog-fill"></span></span>
+        </div>
+
+        <!-- 01 -->
+        <div class="step" data-open="true">
+          <button class="step-hd" aria-expanded="true">
+            <span class="n">01</span><span class="t">Starting point</span>
+            <span class="v" id="v-start">Power + site</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <div class="opts" data-group="start" role="group" aria-label="Starting point">
+              <button class="opt" data-val="site" aria-pressed="true"><span class="dot"></span><span><span class="ot">I have power and a site</span><span class="od">Parcel controlled, service identified or energized.</span></span></button>
+              <button class="opt" data-val="plan"><span class="dot"></span><span><span class="ot">I have power, not a plan</span><span class="od">Capacity or an asset exists. The layout does not.</span></span></button>
+              <button class="opt" data-val="market"><span class="dot"></span><span><span class="ot">I need capacity in a market</span><span class="od">Region and date matter. We source the site.</span></span></button>
+            </div>
+          </div></div></div>
+        </div>
+
+        <!-- 02 -->
+        <div class="step" data-open="false">
+          <button class="step-hd" aria-expanded="false">
+            <span class="n">02</span><span class="t">Available power</span>
+            <span class="v" id="v-power">12.0 MW</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <div class="slider-wrap">
+              <div class="slider-val"><span class="big"><span id="power-big">12.0</span><em>MW at the meter</em></span></div>
+              <input type="range" id="power-slider" min="3" max="40" step="0.5" value="12" aria-label="Available or near-term power in megawatts">
+              <div class="slider-scale"><span>3 MW</span><span>20 MW</span><span>40 MW</span></div>
+              <p class="small" id="power-hint" style="margin-top:16px;color:var(--ink-40)"></p>
+              <button class="tlink tlink-dim" id="power-auto" style="margin-top:16px">Fit the largest configuration <span class="ar" aria-hidden="true">&#8594;</span></button>
+            </div>
+          </div></div></div>
+        </div>
+
+        <!-- 03 -->
+        <div class="step" data-open="false">
+          <button class="step-hd" aria-expanded="false">
+            <span class="n">03</span><span class="t">Configuration</span>
+            <span class="v" id="v-model">NX-2 &middot; 9.0 MW</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <div class="opts" data-group="model" role="group" aria-label="NX configuration">
+              <button class="opt" data-val="nx1"><span class="dot"></span><span><span class="ot">NX-1</span><span class="od">Single building. Metro edge and first phase.</span></span><span class="om">4.5 MW</span></button>
+              <button class="opt" data-val="nx2" aria-pressed="true"><span class="dot"></span><span><span class="ot">NX-2</span><span class="od">Paired buildings on one yard.</span></span><span class="om">9.0 MW</span></button>
+              <button class="opt" data-val="nx3"><span class="dot"></span><span><span class="ot">NX-3</span><span class="od">Three-building block, phased.</span></span><span class="om">13.5 MW</span></button>
+              <button class="opt" data-val="nx4"><span class="dot"></span><span><span class="ot">NX-4</span><span class="od">Campus scale with room to extend.</span></span><span class="om">18.0 MW</span></button>
+            </div>
+          </div></div></div>
+        </div>
+
+        <!-- 04 -->
+        <div class="step" data-open="false">
+          <button class="step-hd" aria-expanded="false">
+            <span class="n">04</span><span class="t">Workload and thermal</span>
+            <span class="v" id="v-thermal">Hybrid liquid</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <div class="opts" data-group="thermal" role="group" aria-label="Thermal strategy">
+              <button class="opt" data-val="air"><span class="dot"></span><span><span class="ot">Air-assisted</span><span class="od">Mixed enterprise and CPU workloads.</span></span><span class="om">&le;30 kW</span></button>
+              <button class="opt" data-val="hybrid" aria-pressed="true"><span class="dot"></span><span><span class="ot">Hybrid liquid</span><span class="od">Inference and mixed GPU fleets.</span></span><span class="om">30&ndash;80 kW</span></button>
+              <button class="opt" data-val="liquid"><span class="dot"></span><span><span class="ot">Direct liquid</span><span class="od">Dense training and frontier inference.</span></span><span class="om">80&ndash;130 kW</span></button>
+            </div>
+            <p class="note" style="margin-top:14px">Rack densities are planning envelopes. Final selection follows the hardware roadmap.</p>
+          </div></div></div>
+        </div>
+
+        <!-- 05 -->
+        <div class="step" data-open="false">
+          <button class="step-hd" aria-expanded="false">
+            <span class="n">05</span><span class="t">Layout and redundancy</span>
+            <span class="v" id="v-layout">Linear &middot; N+1</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <p class="mono dim" style="margin-bottom:9px">Site layout</p>
+            <div class="opts-inline" data-group="layout" role="group" aria-label="Site layout">
+              <button class="chip" data-val="linear" aria-pressed="true">Linear</button>
+              <button class="chip" data-val="compressed" aria-pressed="false">Compressed</button>
+            </div>
+            <p class="small" style="margin-top:10px;color:var(--ink-40)">Linear suits long parcels and staged construction access. Compressed suits constrained urban lots and trades area for tighter service clearance.</p>
+
+            <p class="mono dim" style="margin:26px 0 9px">Electrical redundancy</p>
+            <div class="opts-inline" data-group="redundancy" role="group" aria-label="Redundancy">
+              <button class="chip" data-val="n1" aria-pressed="true">N+1</button>
+              <button class="chip" data-val="2n" aria-pressed="false">2N</button>
+            </div>
+            <p class="small" style="margin-top:10px;color:var(--ink-40)">2N adds equipment yard area and a month of commissioning. Availability targets are set with your engineer, not chosen from a menu.</p>
+          </div></div></div>
+        </div>
+
+        <!-- 06 -->
+        <div class="step" data-open="false">
+          <button class="step-hd" aria-expanded="false">
+            <span class="n">06</span><span class="t">Target date</span>
+            <span class="v" id="v-months">12 months</span>
+            <svg class="chev" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+          <div class="step-body"><div><div class="step-inner">
+            <div class="slider-wrap">
+              <div class="slider-val"><span class="big"><span id="months-big">12</span><em>months from commitment</em></span></div>
+              <input type="range" id="months-slider" min="6" max="24" step="1" value="12" aria-label="Target months from commitment to operation">
+              <div class="slider-scale"><span>6</span><span>15</span><span>24</span></div>
+              <p class="small" style="margin-top:16px;color:var(--ink-40)">The clock starts at binding commitment and mobilization funding. It ends at commissioned operational capacity, not at modules delivered.</p>
+            </div>
+          </div></div></div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div style="padding:28px 0 40px">
+          <div class="summary">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px">
+              <span class="mono">Your configuration</span>
+              <span class="mono dim" id="meter-score">0 / 5</span>
+            </div>
+
+            <div class="meter" id="meter">
+              <div class="meter-bar">
+                <span class="meter-seg"></span><span class="meter-seg"></span><span class="meter-seg"></span><span class="meter-seg"></span><span class="meter-seg"></span>
+              </div>
+              <span class="mono-sm dim" id="meter-label">Early</span>
+            </div>
+
+            <div class="summary-rows">
+              <div class="sr-row"><span class="k">Configuration</span><span class="v" id="sum-model">NX-2</span></div>
+              <div class="sr-row"><span class="k">Critical IT</span><span class="v" id="sum-mw">9.0 MW IT</span></div>
+              <div class="sr-row"><span class="k">Deployment area</span><span class="v" id="sum-area">2.52 acres</span></div>
+              <div class="sr-row"><span class="k">Thermal</span><span class="v" id="sum-thermal">Hybrid liquid</span></div>
+              <div class="sr-row"><span class="k">Redundancy</span><span class="v" id="sum-red">N+1</span></div>
+              <div class="sr-row"><span class="k">Indicative schedule</span><span class="v" id="sum-sched">8 months</span></div>
+            </div>
+
+            <div class="buildcode">
+              <span class="code" id="sum-code">NX2-L-HYB-N1-12MW</span>
+              <button class="mono" id="copy-code" style="color:var(--ink-40)">Copy</button>
+            </div>
+
+            <a class="btn btn-solid btn-wide" data-carry href="project-fit.html"><span>Send this to Flexnode</span><span class="ar" aria-hidden="true">&#8594;</span></a>
+            <p class="note">Indicative only. Final capacity, footprint, schedule and price depend on site, equipment, redundancy and scope.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ STAGE ============ -->
+      <div class="cfg-stage">
+        <div class="stage-view" style="aspect-ratio:5/3">
+          <span class="stage-badge"><span class="live" aria-hidden="true"></span><span id="stage-model">NX-2</span> &middot; <span id="stage-layout">Linear</span></span>
+          <div id="plan-svg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"></div>
+          <span class="stage-tag">[ Indicative site plan &middot; representative geometry ]</span>
+        </div>
+
+        <div class="readout">
+          <div class="ro"><span class="k">Critical IT</span><span class="v"><span id="ro-mw">9.0</span><span class="u">MW</span></span><span class="s" id="ro-mw-sub"></span></div>
+          <div class="ro"><span class="k">Deployment area</span><span class="v"><span id="ro-acres">2.52</span><span class="u">acres</span></span><span class="s" id="ro-acres-sub"></span></div>
+          <div class="ro"><span class="k">Density</span><span class="v"><span id="ro-dens">3.57</span><span class="u">MW / acre</span></span><span class="s">Building, yard and access</span></div>
+          <div class="ro"><span class="k">Indicative schedule</span><span class="v"><span id="ro-months">8</span><span class="u">months</span></span><span class="s" id="ro-months-sub"></span></div>
+        </div>
+
+        <!-- readiness checks -->
+        <div style="padding-top:clamp(36px,4vw,60px)">
+          <div class="sechead"><span class="num">Readiness</span><span class="ttl">What the eight-month path needs</span></div>
+          <div id="checks" class="checks"></div>
+          <p class="note" style="margin-top:18px">A low score is information, not a rejection. Most projects start here and close the gaps in sequence.</p>
+        </div>
+
+        <!-- reference build -->
+        <div style="padding-top:clamp(40px,5vw,72px)">
+          <div class="sechead"><span class="num">Reference</span><span class="ttl">The built form at this scale</span></div>
+          <div class="stage-view" id="ref-stage" style="aspect-ratio:16/9">
+            <div class="plate-grid-bg" aria-hidden="true"></div>
+            <div class="stage-layer" data-layer-id="nx1"><img src="assets/img/nx-exterior.jpg" alt="NX-1 assembled building, isometric view" loading="lazy"></div>
+            <div class="stage-layer" data-layer-id="nx2" data-active="true"><img src="assets/img/nx1-deployment.jpg" alt="NX deployment site plan with building and equipment yards" loading="lazy"></div>
+            <div class="stage-layer" data-layer-id="nx3"><img src="assets/img/ctx-metro.jpg" alt="NX-3 configuration in a metropolitan context" loading="lazy"></div>
+            <div class="stage-layer" data-layer-id="nx4"><img src="assets/img/nx-campus.jpg" alt="NX-4 campus configuration, aerial view" loading="lazy"></div>
+            <span class="stage-tag">[ Illustrative render &middot; not the configured geometry ]</span>
+          </div>
+        </div>
+
+        <!-- what is not decided here -->
+        <div style="padding-top:clamp(40px,5vw,72px)">
+          <div class="sechead"><span class="num">Scope</span><span class="ttl">What this tool does not decide</span></div>
+          <div class="row row-2">
+            <ul class="nlist" style="padding:0;margin:0">
+              <li><span><span class="lh">Utility interconnection</span><span class="ld">Service capacity, tariff and the queue position sit with your utility. Flexnode qualifies what exists, and does not create power.</span></span></li>
+              <li><span><span class="lh">Price</span><span class="ld">Cost per MW is meaningless without a scope matrix. We issue budgetary estimates against a defined boundary, never a headline number.</span></span></li>
+            </ul>
+            <ul class="nlist" style="padding:0;margin:0">
+              <li><span><span class="lh">Availability tier</span><span class="ld">Redundancy topology is an engineering outcome of your SLA and workload criticality, set with a reviewer.</span></span></li>
+              <li><span><span class="lh">Approval outcome</span><span class="ld">We map the approval path early and reduce late surprises. No one guarantees a permit.</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="stack stack-sm">
+        <img src="assets/logo-horizontal-black.svg" alt="Flexnode" style="height:17px;width:auto">
+        <p class="body" style="max-width:34ch;margin-top:16px">Industrialized AI infrastructure. Permanent, configurable data center buildings for distributed, high-density compute.</p>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Product</span>
+        <a href="platform.html">Platform</a>
+        <a href="configure.html">Configure a deployment</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="sites.html">Sites</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Company</span>
+        <a href="company.html">Our story</a>
+        <a href="team.html">Leadership</a>
+        <a href="community.html">Community</a>
+        <a href="insights.html">Insights &amp; news</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Contact</span>
+        <a href="project-fit.html">Request a Project Fit</a>
+        <a href="mailto:info@flexnode.io">info@flexnode.io</a>
+        <a href="https://www.linkedin.com/company/flexnode" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span class="note">&copy; <span data-year>2026</span> Flexnode. Prototype for internal review.</span>
+      <span class="note">Renders illustrative. Capacity, schedule and density figures are representative and pending engineering approval.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/configurator.js"></script>
+</body>
+</html>

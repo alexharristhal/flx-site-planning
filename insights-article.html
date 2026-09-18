@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Available Power Is Not Operational Capacity · Flexnode</title>
+<meta name="description" content="The distance between a quoted megawatt figure and a commissioned critical IT load, itemised: four power states, two gaps and six conditions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23fff'/><rect x='30' y='30' width='40' height='40' fill='%23000'/></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Flexnode home">
+      <img src="assets/logo-horizontal-black.svg" alt="Flexnode">
+    </a>
+    <nav class="nav-links" aria-label="Primary"><a href="platform.html">Platform</a><a href="configure.html">Configure</a><a href="delivery.html">Delivery</a><a href="sites.html">Sites</a><a href="community.html">Community</a><a href="company.html">Company</a><a href="insights.html" aria-current="page">Insights</a></nav>
+    <div class="nav-right">
+      <a class="btn btn-sm" href="project-fit.html"><span>Request a Project Fit</span><span class="ar" aria-hidden="true">&#8599;</span></a>
+      <button class="nav-burger" data-burger aria-expanded="false" aria-controls="drawer">
+        <span class="burger-ico" aria-hidden="true"><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer"><a class="dl" href="platform.html"><span>Platform</span><span class="idx">01</span></a><a class="dl" href="configure.html"><span>Configure</span><span class="idx">02</span></a><a class="dl" href="delivery.html"><span>Delivery</span><span class="idx">03</span></a><a class="dl" href="sites.html"><span>Sites</span><span class="idx">04</span></a><a class="dl" href="community.html"><span>Community</span><span class="idx">05</span></a><a class="dl" href="company.html"><span>Company</span><span class="idx">06</span></a><a class="dl" href="insights.html"><span>Insights</span><span class="idx">07</span></a><a class="dl" href="team.html"><span>Leadership</span><span class="idx">08</span></a><a class="dl" href="project-fit.html"><span>Request a Project Fit</span><span class="idx">09</span></a></div>
+<main id="main">
+
+<article>
+<section class="sec-tight">
+  <div class="wrap">
+    <p class="mono dim rv"><a href="insights.html" style="border-bottom:1px solid var(--rule)">Insights</a> &nbsp;/&nbsp; Power to capacity &nbsp;&middot;&nbsp; Essay &nbsp;&middot;&nbsp; 9 min read</p>
+    <h1 class="d2 rv rv-d1" style="max-width:19ch;margin-top:20px">Available Power Is Not Operational Capacity</h1>
+    <p class="lede rv rv-d2" style="margin-top:24px;max-width:56ch">The distance between a quoted megawatt figure and a commissioned critical IT load is where most AI infrastructure schedules quietly fail. It is measurable, and it is worth measuring before anyone signs anything.</p>
+    <div class="rv rv-d3" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:32px;padding-top:24px;border-top:1px solid var(--rule)">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="width:44px;height:44px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500">ZK</span>
+        <span><span class="d5" style="display:block;font-size:16px">Zak Kostura</span><span class="mono dim" style="display:block;margin-top:4px">Chief Growth Officer &middot; 21 years at Arup</span></span>
+      </div>
+      <span class="note">Published September 2026 &middot; Last reviewed September 2026</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(48px,6vw,88px)">
+  <div class="wrap">
+    <div class="row row-64" style="align-items:start">
+      <div class="prose rv">
+
+        <div class="takeaways">
+          <p class="mono dim" style="margin-bottom:16px">Three takeaways</p>
+          <ul style="margin:0">
+            <li>A megawatt figure describes a utility position. Critical IT load describes what your racks can draw on a date. They are different measurements, and vendors are rarely explicit about which one they are quoting.</li>
+            <li>Six conditions stand between the two: service status, site readiness, long-lead equipment, fiber, the commissioning script and an acceptance basis. Each has an owner, and it is frequently not the developer.</li>
+            <li>Ask for the endpoint definition in writing before comparing two schedules. Most schedule disputes are definition disputes discovered eleven months late.</li>
+          </ul>
+        </div>
+
+        <p>A site comes to us described as having twenty megawatts. It is a real number. Someone at a utility said it, and it is probably in an email. Then you ask the next question, which is what a tenant could actually draw through a rack on a specific date, and the number moves. Sometimes it moves to twelve. Sometimes it moves to zero for thirty months.</p>
+
+        <p>This is not dishonesty. It is that the phrase &ldquo;available power&rdquo; compresses at least four distinct states, and the compression is convenient for everyone until it is catastrophic for someone.</p>
+
+        <h2>Four states that all get called available</h2>
+
+        <p><strong>Energized.</strong> Service is live at the parcel today. There is a meter. This is the only state where the word available means what a non-specialist thinks it means.</p>
+
+        <p><strong>Contracted.</strong> A signed service agreement with a committed energization date. Strong, and still not power. The commitment binds the utility to a date, which means your schedule inherits their schedule, including their supply chain for transformers.</p>
+
+        <p><strong>Planned.</strong> In the utility&rsquo;s plan, or in the interconnection queue. This is a forecast, and forecasts in a constrained market move in one direction. A planned megawatt is a research finding, not an asset.</p>
+
+        <p><strong>Under diligence.</strong> Somebody believes there is capacity. Often they are right. Treat it as a hypothesis with a test attached and a date by which the test resolves.</p>
+
+        <p>A published site list that does not distinguish these four is not a site list. It is a marketing document, and you can tell which one you are reading by whether every entry carries a status and a last-verified date.</p>
+
+        <h2>The second gap: utility input against critical IT load</h2>
+
+        <p>Even with genuinely energized service, the figure at the meter is not the figure available to compute. Cooling, distribution losses, lighting, controls and the mechanical plant all draw from the same service.</p>
+
+        <p>The multiplier depends on thermal strategy. An air-assisted facility at moderate density carries meaningfully more mechanical overhead than a direct-liquid facility at high density, which is one of the underrated arguments for liquid at scale. As a planning basis we work between roughly 1.18 and 1.35 times critical IT load, and we publish which figure we used.</p>
+
+        <p>So nine megawatts of critical IT is an eleven to twelve megawatt service. If a proposal quotes you nine megawatts against a nine megawatt service, someone has made an error, and the discovery point for that error is usually commissioning.</p>
+
+        <blockquote><p>The schedule question is never how fast can you build. It is which of these six things is already true, and who owns the ones that are not.</p></blockquote>
+
+        <h2>Six conditions, and who owns each</h2>
+
+        <p>Between a contracted megawatt and a commissioned load, six things have to resolve. Naming the owner of each is the single most useful hour in project definition.</p>
+
+        <h3>1. Service status and the utility relationship</h3>
+        <p>Owned by the customer or the site holder, executed with the utility. Flexnode qualifies what exists and fits the building to it. We are explicit that we do not create power, and that no product removes an interconnection requirement that a jurisdiction imposes.</p>
+
+        <h3>2. Site readiness</h3>
+        <p>Parcel control, zoning basis, geotechnical, flood designation and a delivery route that will physically accept the modules. The last one is skipped constantly and is not recoverable late. Turning radii and bridge ratings decide build method.</p>
+
+        <h3>3. Long-lead equipment</h3>
+        <p>Switchgear and transformers move on their own lead times, and those lead times have been the binding constraint across this market for three years. The mitigation is qualifying alternates against your interface set before the project needs them, not calling suppliers after award.</p>
+
+        <h3>4. Fiber and network</h3>
+        <p>Carrier presence is necessary and not sufficient. Route diversity, the physical entry into the building and the latency to the population being served are separate questions. For inference workloads the third one is often the reason the site was interesting.</p>
+
+        <h3>5. The commissioning script</h3>
+        <p>Commissioning is a written sequence with pass criteria, not a period at the end of a schedule. If the script does not exist at award, the duration is a guess.</p>
+
+        <h3>6. The acceptance basis</h3>
+        <p>What, precisely, does the customer sign? Modules delivered, building energized, GPU-ready power at the rack, or measured load under acceptance conditions. These are four different dates, and they can be months apart.</p>
+
+        <h2>What to ask before you compare two schedules</h2>
+
+        <p>Most schedule disagreements are definitional. Two vendors quote eight and twelve months, and the comparison is meaningless because they are measuring different intervals. Three questions resolve it:</p>
+
+        <ul>
+          <li><strong>When does the clock start?</strong> Purchase order, binding letter of intent, notice to proceed, site-ready date and mobilization funding are all in use as start points. The gap between the earliest and latest is routinely three months.</li>
+          <li><strong>When does it stop?</strong> Ask for the acceptance basis in one sentence. If the answer describes delivery rather than measured load, it is not the same product being priced.</li>
+          <li><strong>What is assumed already true?</strong> Every fast schedule is conditional. A vendor who states the conditions is giving you a plan. A vendor who does not is transferring risk you have not priced.</li>
+        </ul>
+
+        <p>For what it is worth, our own published basis is approximately eight months for a qualified, site-ready project in the five to ten megawatt band, measured from binding commitment and mobilization funding to commissioned operation. It is a delivery basis for review. It is not yet a completed NX case study, and we say so on every page it appears on.</p>
+
+        <h2>Why this gets worse before it gets better</h2>
+
+        <p>Interconnection queues in most constrained markets are measured in years. Equipment lead times have not returned to pre-2022 norms. Meanwhile the workloads that most need distributed capacity, inference close to the population it serves, are precisely the ones that cannot wait for a mega-campus to clear a queue.</p>
+
+        <p>That is the structural case for fitting deployments to power that already exists, at a capacity band where existing industrial and commercial service is often sufficient. It is not a claim that any project escapes utility work. It is a claim that starting from the constraint, rather than from a target capacity, produces a schedule you can actually hold.</p>
+
+        <p>The practical version is unglamorous. Ask what state the power is in. Ask who owns each of the six conditions. Ask what the endpoint means. Then compare.</p>
+
+      </div>
+
+      <aside class="stack stack-lg rv rv-d1" style="position:sticky;top:calc(var(--nav-h) + 24px)">
+        <div>
+          <p class="mono" style="padding-bottom:12px;border-bottom:1px solid var(--black)">Evidence basis</p>
+          <dl class="spec" style="border-top:0">
+            <div class="spec-row"><dt>Facility multiplier</dt><dd>1.18 &ndash; 1.35&times;<span class="sub">Modelled, thermal dependent</span></dd></div>
+            <div class="spec-row"><dt>Eight-month basis</dt><dd>5 &ndash; 10 MW<span class="sub">Qualified, site-ready</span></dd></div>
+            <div class="spec-row"><dt>Clock start</dt><dd>Binding commitment<span class="sub">Plus mobilization funding</span></dd></div>
+            <div class="spec-row"><dt>Endpoint</dt><dd>Commissioned load<span class="sub">Not modules delivered</span></dd></div>
+          </dl>
+          <p class="note" style="margin-top:14px">Delivery basis for review. Not a completed case study.</p>
+        </div>
+
+        <div>
+          <p class="mono" style="padding-bottom:12px;border-bottom:1px solid var(--black)">Test it on your own site</p>
+          <p class="small" style="margin:14px 0 16px">Put your power figure and your date into the configurator and see which of the six conditions you already clear.</p>
+          <a class="btn btn-wide" href="configure.html"><span>Design your deployment</span><span class="ar" aria-hidden="true">&#8594;</span></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec-sm">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">Related</span><span class="ttl">Continue</span></div>
+    <div class="art-list rv">
+      <a class="art" href="insights.html">
+        <span class="art-meta">Power to capacity<br>Technical brief &middot; 8 min</span>
+        <span><h3>What an Eight-Month Deployment Actually Requires</h3><p>Where the clock starts, which workstreams run in parallel, and what commissioned means at the end of it.</p></span>
+        <span class="art-right"><span class="art-meta">Nic Rader</span><span class="tlink tlink-dim">Read <span class="ar" aria-hidden="true">&#8594;</span></span></span>
+      </a>
+      <a class="art" href="delivery.html">
+        <span class="art-meta">Delivery<br>Page</span>
+        <span><h3>The six conditions, on one page</h3><p>The delivery page states each condition, its owner and what happens to the schedule when one is missing.</p></span>
+        <span class="art-right"><span class="art-meta">Flexnode</span><span class="tlink tlink-dim">Open <span class="ar" aria-hidden="true">&#8594;</span></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+</article>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="stack stack-sm">
+        <img src="assets/logo-horizontal-black.svg" alt="Flexnode" style="height:17px;width:auto">
+        <p class="body" style="max-width:34ch;margin-top:16px">Industrialized AI infrastructure. Permanent, configurable data center buildings for distributed, high-density compute.</p>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Product</span>
+        <a href="platform.html">Platform</a>
+        <a href="configure.html">Configure a deployment</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="sites.html">Sites</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Company</span>
+        <a href="company.html">Our story</a>
+        <a href="team.html">Leadership</a>
+        <a href="community.html">Community</a>
+        <a href="insights.html">Insights &amp; news</a>
+      </div>
+      <div class="foot-nav">
+        <span class="h">Contact</span>
+        <a href="project-fit.html">Request a Project Fit</a>
+        <a href="mailto:info@flexnode.io">info@flexnode.io</a>
+        <a href="https://www.linkedin.com/company/flexnode" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span class="note">&copy; <span data-year>2026</span> Flexnode. Prototype for internal review.</span>
+      <span class="note">Renders illustrative. Capacity, schedule and density figures are representative and pending engineering approval.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
